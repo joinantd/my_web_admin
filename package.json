@@ -19,6 +19,7 @@
   "homepage": "https://github.com/joinantd/my_web_admin#readme",
   "dependencies": {
     "koa": "^2.11.0",
+    "koa-router": "^7.4.0",
     "nodemon": "^2.0.2"
   }
 }
