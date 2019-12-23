@@ -1,0 +1,24 @@
+{
+  "name": "my_web_admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joinantd/my_web_admin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joinantd/my_web_admin/issues"
+  },
+  "homepage": "https://github.com/joinantd/my_web_admin#readme",
+  "dependencies": {
+    "koa": "^2.11.0",
+    "nodemon": "^2.0.2"
+  }
+}
