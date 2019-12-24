@@ -23,6 +23,9 @@
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
     "koa-views": "^6.2.1",
-    "nodemon": "^2.0.2"
+    "mysql": "^2.17.1",
+    "mysql2": "^2.1.0",
+    "nodemon": "^2.0.2",
+    "sequelize": "^5.21.3"
   }
 }
