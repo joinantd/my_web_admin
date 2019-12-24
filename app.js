@@ -34,8 +34,8 @@ app.use(bodyparser());
 app.use(cors()); //使用cors
 
 //启动路由
-// app.use(router.routes()); //启动路由
-// //   .use(router.alloweMethods());
+app.use(router.routes()); //启动路由
+//   .use(router.alloweMethods());
 app.use(index.routes());
 
 app.listen(3000, () => {
