@@ -8,6 +8,9 @@ let bodyparser = require("koa-bodyparser");
 
 let app = new koa();
 
+//配置模板引擎  第三方中间件
+// app.use(views("views", { map: { html: "ejs" } })); //第二种、应用ejs模板引擎(模板配置名后缀为.html)
+
 app.use(
   views("views", {
     extension: "ejs" //第一种、应用ejs模板引擎
@@ -18,14 +21,8 @@ router.get("/", async ctx => {
   ctx.body = "首页";
 });
 
-//ctx.request.body获取表单提交数据
-router.post("/doadd", async ctx => {
-  console.log(ctx.request.body);
-  ctx.body = ctx.request.body;
-});
-
 //配置中间件
-app.use(bodyparser());
+app.use(bodyParser());
 
 //启动路由
 app.use(router.routes()); //启动路由
