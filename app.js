@@ -3,12 +3,12 @@
  */
 let koa = require("koa");
 let router = require("koa-router")(); //引入并实例化
-let views = require("koa-views");
+// let views = require("koa-views");
 
 let app = new koa();
 
 //配置模板引擎  第三方中间件
-app.use(views("views", { map: { html: "ejs" } })); //第二种、应用ejs模板引擎
+// app.use(views("views", { map: { html: "ejs" } })); //第二种、应用ejs模板引擎
 
 // app.use(
 //   views("views", {
