@@ -1,4 +1,4 @@
-const mysql = require("../lib/mysql");
+const mysql = require("../lib/article");
 class ArticleSevice {
   /**
    * 查询文章的详情

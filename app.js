@@ -9,7 +9,7 @@ let cors = require("koa-cors");
 
 let app = new koa();
 
-let index = require("./routes/index");
+let article = require("./routes/article");
 
 app.use(
   views("views", {
@@ -17,14 +17,8 @@ app.use(
   })
 );
 
-router.get("/", async ctx => {
-  ctx.body = "首页";
-});
-
-//ctx.request.body获取表单提交数据
-router.post("/doadd", async ctx => {
-  console.log(ctx.request.body);
-  ctx.body = ctx.request.body;
+router.get("/news", function(ctx, next) {
+  ctx.body = "this is a get1 response!";
 });
 
 //配置中间件
@@ -36,7 +30,9 @@ app.use(cors()); //使用cors
 //启动路由
 app.use(router.routes()); //启动路由
 //   .use(router.alloweMethods());
-app.use(index.routes());
+
+//文章路由
+app.use(article.routes());
 
 app.listen(3000, () => {
   console.log("888888888888");
