@@ -10,6 +10,7 @@ let cors = require("koa-cors");
 let app = new koa();
 
 let article = require("./routes/article");
+let user = require("./routes/user");
 
 app.use(
   views("views", {
@@ -33,6 +34,8 @@ app.use(router.routes()); //启动路由
 
 //文章路由
 app.use(article.routes());
+//用户
+app.use(user.routes());
 
 app.listen(3000, () => {
   console.log("888888888888");

@@ -1,6 +1,6 @@
 const ArticleSevice = require("../service/article");
 
-class articleController {
+class ArticleController {
   static async getArticleById(ctx) {
     let id = ctx.params.id;
     if (id) {
@@ -31,4 +31,4 @@ class articleController {
   }
 }
 
-module.exports = articleController;
+module.exports = ArticleController;

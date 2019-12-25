@@ -1,5 +1,5 @@
 const Router = require("koa-router");
-const ArtileController = require("../controllers/article");
+const ArticleController = require("../controllers/article");
 
 const router = new Router({
   prefix: "/api/web"
@@ -9,6 +9,6 @@ const router = new Router({
  * 文章接口
  */
 //文章列表
-router.get("/article/:id", ArtileController.getArticleById);
+router.get("/article/:id", ArticleController.getArticleById);
 
 module.exports = router;
