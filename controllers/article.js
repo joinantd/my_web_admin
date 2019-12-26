@@ -2,7 +2,7 @@ const ArticleSevice = require("../service/article");
 
 class ArticleController {
   static async getArticleById(ctx) {
-    let id = ctx.params.id;
+    let id = ctx.query.id;
     if (id) {
       try {
         // 查询文章详情模型

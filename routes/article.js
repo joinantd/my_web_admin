@@ -9,6 +9,6 @@ const router = new Router({
  * 文章接口
  */
 //文章列表
-router.get("/article/:id", ArticleController.getArticleById);
+router.get("/article", ArticleController.getArticleById);
 
 module.exports = router;

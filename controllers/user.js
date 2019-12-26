@@ -6,7 +6,7 @@ class UserControllers {
       username: ctx.request.body.username,
       password: ctx.request.body.password
     };
-    if (!!users.username && !!users.username) {
+    if (ctx.request.body.username) {
       try {
         let data = await UserService.login(users.username);
         ctx.response.status = 200;
@@ -27,11 +27,7 @@ class UserControllers {
       ctx.response.status = 416;
       ctx.body = {
         code: 416,
-        msg: !!users.username
-          ? "请输入密码"
-          : !!users.password
-          ? "请输入用户名"
-          : "请输入用户名或密码"
+        msg: "请输入用户名或密码123123131"
       };
     }
   }
