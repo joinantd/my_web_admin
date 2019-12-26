@@ -27,7 +27,7 @@ class UserControllers {
       ctx.response.status = 416;
       ctx.body = {
         code: 416,
-        msg: "请输入用户名或密码123123131"
+        msg: "请输入用户名或密码"
       };
     }
   }
