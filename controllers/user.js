@@ -13,7 +13,7 @@ class UserControllers {
         ctx.body = {
           code: 200,
           msg: "查询成功",
-          data
+          data: data[0]
         };
       } catch (err) {
         ctx.response.status = 412;
